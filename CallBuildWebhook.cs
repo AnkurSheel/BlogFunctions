@@ -9,7 +9,7 @@ namespace BlogFunctions
 	public static class CallBuildWebhook
 	{
 		// {second=0} {minute=15} {hour=10} {day} {month} {day-of-week=(2=Tuesday)}
-		private const string TimerSchedule = "0 00 14 * * *";
+		private const string TimerSchedule = "0 0 14 * * *";
 		private static readonly HttpClient _client = new HttpClient();
 
 		[FunctionName("CallBuildWebhook")]
